@@ -24,3 +24,6 @@
 ## 궁금한점
   1. 어떤 스타일은 index.css에 쓰고 어떤 스타일은 App.css에 쓰는 거지?
 
+## 진행상황
+### '23.06.28
+![V 0628](https://github.com/badahae88/todo-list-app/assets/137893145/a6660334-0a1b-43d2-89ea-5d18c650a97c)
