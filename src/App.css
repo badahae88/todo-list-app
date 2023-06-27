@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+
+html, body {
+  margin: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  font-family: 'Grandiflora One', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root{
+  background-color: white;
   min-height: 100vh;
+  min-width : 500px;
+  box-shadow: rgba(100, 100, 100, 0.2) 0px 7px 29px 0px;
+}
+
+.App{
+  padding: 0 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap:30px;
+}
+
+.Header{
+  color: #1f93ff;
+}
+
+.TodoEditor .editor-wrapper{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.TodoEditor input {
+  flex:1;
+  box-sizing: border-box;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.TodoEditor input:focus {
+  outline: none;
+  border: 1px solid #1f93ff;
+  
+}
+
+.TodoEditor button {
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: #1f94ff;
   color: white;
+  border-radius: 5px;;
 }
 
-.App-link {
-  color: #61dafb;
+.TodoItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(220,220,220);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TodoItem input{
+  width:20px;
+}
+.TodoItem h3{
+  flex:1;
+}
+.TodoItem p{
+  font-size: 14px;
+  color: gray;
+}
+.TodoItem button{
+  margin-left: auto;
+  cursor:pointer;
+  color: gray;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding:5px;
+}
+
+.SearchBar{
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(220,220,220);
+  box-sizing: border-box;
+  padding: 15px 0px;
+}
+
+.SearchBar:focus{
+  outline: none;
+  border-bottom: 1px solid #1f94ff;
+}
+
+.Footer{
+  text-align: center;
 }
